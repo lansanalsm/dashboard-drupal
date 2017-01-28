@@ -1,0 +1,273 @@
+{
+    "title": "Carriere",
+    "type": "object",
+    "version": "1.0",
+    "properties": {
+        "date": {
+            "type": "date",
+            "format": "MM/JJ/AAAA"
+        },
+        "agent-pointeur" : {
+            "prenom-nom": {
+                "enum": [
+                    "evance",
+                    "jules",
+                    "abdoulaye",
+                    "mudu",
+                    "karifa",
+                    "zombie master"
+                  ]
+             },
+             "fonction": {
+                "enum": [
+                    "agent pointeur",
+                    "coordinateur"
+                  ]
+             },
+              "societe": {
+                "enum": [
+                    "carriere chinoise",
+                    "emporium",
+                    "Nour Jamil",
+                    "AMG",
+                    "SOMIAG",
+                    "SETRAG",
+                    "Tormelin Sable",
+                    "Wassou Sable",
+                    "Tanene Sable",
+                    "Alame",
+                    "Sofamag"
+                  ]
+             },
+              "prefecture": {
+                "enum": [
+                    "Fria",
+                    "Coyah",
+                    "Dubreka"
+                  ]
+             }
+        },
+        "carriere" : {
+            "designation": {
+                "type": "string"
+                },
+            "date-demande": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+                },
+            "numero-arrete": {
+                "type": "string"
+                },
+             "date-signature": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+                },
+             "substance": {
+                "enum": [
+                    "Granite",
+                    "Dolérite",
+                    "Pouzzolane",
+                    "Calcaire",
+                    "Autre Substance"
+                  ]
+             },
+             "autre-substance": {
+                 "type": "string"
+             },
+             "prefecture": {
+                "enum": [
+                    "Dubreka",
+                    "Boffa",
+                    "N'Zerekore",
+                    "Coyah",
+                    "Boke",
+                    "Mamou",
+                    "Mali",
+                    "Kindia",
+                    "Tougue",
+                    "Autre Prefecture"
+                  ]
+             },
+             "autre-prefecture": {
+                 "type": "string"
+             },
+              "situation-du-permis": {
+                "enum": [
+                    "Octroi",
+                    "Renouvellement",
+                    "Recherche",
+                    "Autre Situation"
+                  ]
+             },
+             "autre-situation" : {
+                 "type": "string"
+             },
+             "date-debut-exploitation": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+                },
+            "date-expiration": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+                },
+            "prenom-directeur": {
+                 "type": "string"
+             },
+              "nom-directeur": {
+                 "type": "string"
+             },
+              "sexe-directeur": {
+                 "enum": [
+                    "Masculin",
+                    "Feminin"
+                  ]
+             },
+             "email-directeur": {
+                 "type": "string",
+                 "format": "quelquechose@exemple.com"
+             },
+             "telephone-directeur": {
+                 "type": "string",
+                 "max-length": "12"
+             },
+             "site-web": {
+                 "type": "string",
+                 "format": "www.exemple.com"
+             },
+             "coordonnees-gps": {
+                 "longitude": {
+                     "type": "string"
+                 },
+                 "latitude": {
+                     "type": "string"
+                 }
+             },
+             "observation": {
+                 "type": "string"
+             }
+        },
+        "production-carriere" : {
+            "periode-reference": {
+                "enum": [
+                    "Mensuelle",
+                    "Trimestrielle",
+                    "Semestrielle",
+                    "Annuelle"
+                  ]
+             },
+         "date-debut-exercice": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+            },
+        "date-fin-exercice": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+            },
+        "production-total": {
+                "type": "number",
+                 "currency":"m3"
+            },
+        "prix-unitaire": {
+                "type": "number",
+                "currency": "GNF"
+            },
+        "quantite-total-vendu": {
+                "type": "number",
+                "currency":"m3"
+            },
+         "taxe-superficiaire": {
+                "type": "number",
+                "currency": "GNF"
+            },
+         "redevance-etat": {
+                "type": "number",
+                "currency": "GNF"
+            },
+        "exportation": {
+                "type": "number"
+            },
+        "contribution-developpement": {
+                "type": "number",
+                "currency": "GNF"
+            },
+        "loyer-infrastructure": {
+                "type": "number",
+                "currency": "GNF"
+            },
+        "montant-investissement": {
+                "type": "number",
+                "currency": "GNF"
+            }   
+        },
+        "rh-carriere" : {
+            "periode-reference": {
+                "enum": [
+                    "Mensuelle",
+                    "Trimestrielle",
+                    "Semestrielle",
+                    "Annuelle"
+                  ]
+             },
+         "date-debut-exercice": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+            },
+        "date-fin-exercice": {
+                "type": "date",
+                "format": "MM/JJ/AAAA"
+            },
+        "emploi-direct-nationaux-homme": {
+                "type": "number"
+            },
+        "emploi-direct-nationaux-femme": {
+                "type": "number"
+            },
+        "emploi-indirect-nationaux-homme": {
+                "type": "number"
+            },
+        "emploi-indirect-nationaux-femme": {
+                "type": "number"
+            },
+        "emploi-expatrier-homme": {
+                "type": "number"
+            },
+         "emploi-expatrier-femme": {
+                "type": "number"
+            },
+         "nombre-cadre": {
+                "type": "number"
+            },
+         "nombre-ouvrier-qualifies": {
+                "type": "number"
+            },
+         "nombre-ouvrier-non-qualifies": {
+                "type": "number"
+            },
+         "nombre-stagiaire": {
+                "type": "number"
+            },
+        "accident-avec-arret": {
+                "type": "number"
+            },
+         "accident-sans-arret": {
+                "type": "number"
+            },
+        "accident-arret-plus-six": {
+                "type": "number"
+            },
+        "surface-restaure": {
+                "type": "number",
+                "currency":"HA"
+            },
+         "surface-reboiser": {
+                "type": "number",
+                "currency":"HA"
+            }      
+        },
+    "required": [
+                "agent-pointeur",
+                "carriere",
+                "production-carriere"
+        ]
+   }
+}
